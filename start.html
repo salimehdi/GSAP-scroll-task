@@ -1,0 +1,197 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#222;
+    }
+    #sq{
+        z-index: -1;
+        width: 40vw;
+        height: 100vw;
+        background-color: dodgerblue;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+    }
+    #cir{
+        width: 300px;
+        height: 300px;
+        background-color: dodgerblue;
+        position: absolute;
+        top: 20vh;
+        right: -150px;
+        border-radius: 100%;
+    }
+    #one{
+        background-color: green;
+        position: absolute;
+        top: 100%;
+    }
+    #two{
+        background-color: green;
+        position: absolute;
+        top: 200%;
+    }
+    #three{
+        background-color: green;
+        position: absolute;
+        top: 300%;
+    }
+    #topText {
+        width: 100px;
+        height: 40px;
+        position: fixed;
+        top: 35%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: black;
+        font-size: 30px;
+        overflow: hidden;
+        > #box3, #box5 {
+            position: absolute;
+            top: -35px;
+            left: calc(50% - 30px);
+        }
+    }
+    #circleWithDots{
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
+    .whitePath{
+        visibility: hidden;
+    }
+    .blueCir{
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div id="sq">
+        <div id="cir">
+            <?xml version="1.0" encoding="utf-8"?>
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg id="circleWithDots" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M99.8,3.9C73.4,3.9,49.6,14.6,32.3,31.8"/>
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M168.6,32.6C151.2,14.9,127,3.9,100.2,3.9"/>
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M196.1,99.5C196,73.7,185.7,50.3,169,33.1"/>
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M168.4,167.5c17-17.3,27.6-41,27.7-67.1"/>
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M100.4,196.1c26.4-0.1,50.3-10.9,67.6-28.2"/>
+            <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M32.8,168.7c17.2,16.9,40.8,27.3,66.8,27.4"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M99.8,3.8C73.4,3.8,49.6,14.5,32.3,31.7"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168.6,32.5C151.2,14.8,127,3.8,100.2,3.8"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M196.1,99.4C196,73.6,185.7,50.1,169,32.9"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168.4,167.4c17-17.3,27.6-41,27.7-67.1"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.4,196c26.4-0.1,50.3-10.9,67.6-28.2"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.8,168.6c17.2,16.9,40.8,27.3,66.8,27.4"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="31.8" cy="31.3" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="100.5" cy="3.4" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="167.9" cy="32.4" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="195.6" cy="99.5" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="168" cy="167" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="100.5" cy="195.6" r="3.1"/>
+                <circle class="greyCir" fill="#C9C9C9" cx="32.3" cy="168.3" r="3.1"/>
+
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="32.3" cy="31.3" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="101" cy="3.4" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="168.4" cy="32.4" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="196.1" cy="99.5" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="168.5" cy="167" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="101" cy="195.6" r="3.1"/>
+                <circle class="blueCir" fill="#44ABE0" stroke="#FFFFFF" stroke-miterlimit="10" cx="32.7" cy="168.3" r="3.1"/>
+            </svg>
+            
+
+            <div id="topText">
+                <div id="box5">Bye</div>
+                <div id="box3">Hello</div>
+                <div id="box4">Hi</div>
+            </div>
+            <div id="midText"></div>
+            <div id="botText"></div>
+        </div>
+    </div>
+    <div id="one">__________________________</div>
+    <div id="two">__________________________</div>
+    <div id="three">__________________________</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+<script>
+    let blueCirs = document.getElementsByClassName("blueCir");
+    let whitePaths = document.getElementsByClassName("whitePath");
+    blueCirs[0].style.visibility = "visible";
+
+    function pathPrepare(el) {
+        var lineLength = el.getTotalLength();
+        el.style.strokeDasharray = lineLength;
+        el.style.strokeDashoffset = lineLength;
+    }
+
+    Array.from(whitePaths).forEach(e => {
+        pathPrepare(e);
+    });
+
+    var controller = new ScrollMagic.Controller();
+
+    var tween = new TimelineMax()
+        .add(TweenMax.to(whitePaths[0], 1, { strokeDashoffset: 0, ease: Linear.easeNone })) 
+        .add(TweenMax.to("#one", 1, { stroke: "#33629c", visibility:"visible", ease: Linear.easeNone }), 0); 
+
+    var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 200, tweenChanges: true })
+        .setTween(tween)
+        .addIndicators() 
+        .addTo(controller);
+
+    gsap.registerPlugin(ScrollTrigger)
+    let tl = gsap.timeline({
+            scrollTrigger:{
+                trigger:"#one",
+                start:"top 40% ",
+                end:"bottom 20%",
+                pinSpacing: false,
+                scrub:true,
+                toggleActions:"restart pause reverse none",
+                markers:true,
+            }
+        })
+
+    tl.to("#box4", {
+        duration: 0.1,
+        y:35,
+    })
+    tl.to("#box3", {
+        duration: 0.1,
+        y:35,
+    })
+
+    let t2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:"#two",
+                start:"top 40% ",
+                end:"bottom 20%",
+                pinSpacing: false,
+                scrub:true,
+                toggleActions:"restart pause reverse none",
+                markers:true,
+            }
+        })
+
+    t2.to("#box3", {
+        duration: 0.1,
+        y:70,
+    })
+    t2.to("#box5", {
+        duration: 0.1,
+        y:35,
+    })
+</script>
+</html>
