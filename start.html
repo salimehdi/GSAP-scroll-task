@@ -2,74 +2,7 @@
 <head>
     <title>Document</title>
 </head>
-<style>
-    body{
-        background-color:#222;
-    }
-    #sq{
-        z-index: -1;
-        width: 40vw;
-        height: 100vw;
-        background-color: dodgerblue;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-    }
-    #cir{
-        width: 300px;
-        height: 300px;
-        background-color: dodgerblue;
-        position: absolute;
-        top: 20vh;
-        right: -150px;
-        border-radius: 100%;
-    }
-    #one{
-        background-color: green;
-        position: absolute;
-        top: 100%;
-    }
-    #two{
-        background-color: green;
-        position: absolute;
-        top: 200%;
-    }
-    #three{
-        background-color: green;
-        position: absolute;
-        top: 300%;
-    }
-    #topText {
-        width: 100px;
-        height: 40px;
-        position: fixed;
-        top: 35%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: black;
-        font-size: 30px;
-        overflow: hidden;
-        > #box3, #box5 {
-            position: absolute;
-            top: -35px;
-            left: calc(50% - 30px);
-        }
-    }
-    #circleWithDots{
-        width: 90%;
-        height: 90%;
-        position: absolute;
-        left: 5%;
-        top: 5%;
-    }
-    .whitePath{
-        visibility: hidden;
-    }
-    .blueCir{
-        visibility: hidden;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
     <div id="sq">
         <div id="cir">
@@ -84,12 +17,17 @@
             <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M168.4,167.5c17-17.3,27.6-41,27.7-67.1"/>
             <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M100.4,196.1c26.4-0.1,50.3-10.9,67.6-28.2"/>
             <path class="greyPath" fill="none" stroke="#C9C9C9" stroke-miterlimit="10" d="M32.8,168.7c17.2,16.9,40.8,27.3,66.8,27.4"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M99.8,3.8C73.4,3.8,49.6,14.5,32.3,31.7"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168.6,32.5C151.2,14.8,127,3.8,100.2,3.8"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M196.1,99.4C196,73.6,185.7,50.1,169,32.9"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168.4,167.4c17-17.3,27.6-41,27.7-67.1"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.4,196c26.4-0.1,50.3-10.9,67.6-28.2"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.8,168.6c17.2,16.9,40.8,27.3,66.8,27.4"/>
+
+
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.2,31.6C51,13,75.4,3.9,99.8,3.9"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.2,3.9C125,3.9,149.8,13.3,168.7,32.4"/>
+            <!-- Need to change its direction -->
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M197,99.1c-0.7-24-10.4-47.7-28.8-65.8"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168,167.3c18.5-18.4,28-42.5,28.4-66.8"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.4,196.1c24.5-0.2,48.9-9.7,67.5-28.4"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.7,169c18.8,18,43,26.9,67.1,26.7"/>
+            <!--  -->
+            
                 <circle class="greyCir" fill="#C9C9C9" cx="31.8" cy="31.3" r="3.1"/>
                 <circle class="greyCir" fill="#C9C9C9" cx="100.5" cy="3.4" r="3.1"/>
                 <circle class="greyCir" fill="#C9C9C9" cx="167.9" cy="32.4" r="3.1"/>
@@ -109,89 +47,149 @@
             
 
             <div id="topText">
-                <div id="box5">Bye</div>
-                <div id="box3">Hello</div>
-                <div id="box4">Hi</div>
+                <div class="cirTop stay"></div>
+                <div class="cirTop">The Next Big</div>
+                <div class="cirTop">Powered by advance</div>
+                <div class="cirTop">Refining</div>
+                <div class="cirTop">Text Headline</div>
+                <div class="cirTop">Developing ERP Solution for</div>
+                <div class="cirTop">Biggest Classified</div>
             </div>
-            <div id="midText"></div>
-            <div id="botText"></div>
+            <div id="midText">
+                <div class="cirMid stay">25M+ Downloads</div>
+                <div class="cirMid">Blockchain</div>
+                <div class="cirMid">
+                    <img src="./ScrollAnimation Task Assets/3 nasa/nasa-mobile-app.png" alt="nasa">
+                </div>
+                <div class="cirMid">UX Strategy</div>
+                <div class="cirMid">Text Headline</div>
+                <div class="cirMid">Text Headline</div>
+                <div class="cirMid">East Asia</div>
+            </div>
+            <div id="botText">
+                <div class="cirBot stay">on appstore</div>
+                <div class="cirBot">Revolution</div>
+                <div class="cirBot">algorithm</div>
+                <div class="cirBot">and UI design</div>
+                <div class="cirBot">Footer headline</div>
+                <div class="cirBot">in furniture industry</div>
+                <div class="cirBot">Countries</div>
+            </div>
+        </div>
+        <div id="rightCard">
+            <div class="rightCardFill stay">
+                <img src="./ScrollAnimation Task Assets/1 film/world-communication-awards-for-best-digital-experience.png" alt="nasa">
+            </div>
+            <div class="rightCardFill">
+
+            </div>
+            <div class="rightCardFill">
+                <img src="./ScrollAnimation Task Assets/7 east asia/mobile-app-of-the-year-by-entrepreneur.png" alt="nasa">
+            </div>
+        </div>
+        <div id="rightBigText">
+            <div class="rightBigTextFill stay">ABC 123</div>
+            <div class="rightBigTextFill">ABC 234</div>
+            <div class="rightBigTextFill">ABC 345</div>
+            <div class="rightBigTextFill">ABC 456</div>
+            <div class="rightBigTextFill">ABC 567</div>
+            <div class="rightBigTextFill">ABC 678</div>
+            <div class="rightBigTextFill">ABC 89544</div>
+        </div>
+        <div id="rightSmallText">
+            <div class="rightSmallTextFill stay">Lorem, ipsum dolor sit amet consectetur adipisicing elit.dolor sit amet</div>
+            <div class="rightSmallTextFill">Tempora omnis voluptatem cumque ducimus aliquid reiciendis veritatis.</div>
+            <div class="rightSmallTextFill">Vel dolorum sunt necessitatibus possimus, magnam voluptatum omnis</div>
+            <div class="rightSmallTextFill">Enim, vero modi temporibus ipsam quaerat sapiente ea laborum ad iure</div>
+            <div class="rightSmallTextFill">Officiis maxime libero voluptates dicta. Debitis tenetur dolorem</div>
+            <div class="rightSmallTextFill">earum quisquam fuga, repudiandae laboriosam nihil non, veritatis ab vel</div>
+            <div class="rightSmallTextFill">Lorem, ipsum dolor sit amet consectetur adipisicing elit.dolor sit</div>
+        </div>
+        <div id="rightBottomText">
+            <div class="rightBottomTextFill stay">View Case Study →</div>
+            <div class="rightBottomTextFill">Coming Soon</div>
+            <div class="rightBottomTextFill">Coming Soon</div>
+            <div class="rightBottomTextFill">View Case Study →</div>
+            <div class="rightBottomTextFill">View Case Study →</div>
+            <div class="rightBottomTextFill">View Case Study →</div>
+            <div class="rightBottomTextFill">Coming Soon</div>
+        </div>
+        <div id="skip">SKIP</div>
+    </div>
+
+    <div id="topImgOne">
+        <div class="topImgOneFill"></div>
+        <div class="topImgOneFill">
+            <img id="pizzaBox" src="./ScrollAnimation Task Assets/4 dominos/pizza_box.png">
+        </div>
+        <div class="topImgOneFill">
+            <img id="tioSocial" src="./ScrollAnimation Task Assets/5 social/karavan-social-networking-app-screen.png">
+        </div>
+        <div class="topImgOneFill">
+            <img id="tioInterior" src="./ScrollAnimation Task Assets/6 bed/interior.jpg">
         </div>
     </div>
-    <div id="one">__________________________</div>
-    <div id="two">__________________________</div>
-    <div id="three">__________________________</div>
+    <div id="topImgTwo">
+        <div class="topImgTwoFill">
+        </div>
+        <div class="topImgTwoFill stay">
+            <img id="tioNasa" src="./ScrollAnimation Task Assets/1 film/nexgtv-mobile-app-ui-design.png">
+        </div>
+        <div class="topImgTwoFill">
+            <img id="veme" src="./ScrollAnimation Task Assets/2 blockchain/veme-app-ui-design.png">
+        </div>
+        <div class="topImgTwoFill">
+            <img id="veme" src="./ScrollAnimation Task Assets/3 nasa/measure-total-body-weight-through-fitness-app.png">
+        </div>
+        <div class="topImgTwoFill">
+            <img id="veme2" src="./ScrollAnimation Task Assets/4 dominos/ux-strategy-for-mobile-app-devlopment.png">
+        </div>
+        <div class="topImgTwoFill">
+            <img id="veme3" src="./ScrollAnimation Task Assets/5 social/social-networking-app-case-study.png">
+        </div>
+    </div>
+    <div id="bottomImgOne">
+        <div class="bottomImgOneFill stay">
+            <img id="nexgtv" src="./ScrollAnimation Task Assets/1 film/nexgtv-entertainment-mobile-app-development.png">
+        </div>
+        <div class="bottomImgOneFill">
+            <img id="nexgtv2" src="./ScrollAnimation Task Assets/2 blockchain/veme-blockchain-app-developed.png" >
+        </div>
+        <div class="bottomImgOneFill">
+            <img id="nexgtv3" src="./ScrollAnimation Task Assets/3 nasa/nasa-fitness-tracking-mobile-app.png">
+        </div>
+        <div class="bottomImgOneFill">
+            <img id="nexgtv4" src="./ScrollAnimation Task Assets/4 dominos/domi-img1.png">
+        </div>
+        <div class="bottomImgOneFill">
+            <img id="nexgtv4" src="./ScrollAnimation Task Assets/5 social/karavan_2.png">
+        </div>
+        <div class="bottomImgOneFill">
+            <img id="nexgtv5" src="./ScrollAnimation Task Assets/6 bed/erp-app-development-service.png">
+        </div>
+        <div class="bottomImgOneFill">
+
+        </div>
+    </div>
+    <div id="bottomImgTwo">
+
+    </div>
+    <div id="bottomImgThree">
+
+    </div>
+
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-
-<script>
-    let blueCirs = document.getElementsByClassName("blueCir");
-    let whitePaths = document.getElementsByClassName("whitePath");
-    blueCirs[0].style.visibility = "visible";
-
-    function pathPrepare(el) {
-        var lineLength = el.getTotalLength();
-        el.style.strokeDasharray = lineLength;
-        el.style.strokeDashoffset = lineLength;
-    }
-
-    Array.from(whitePaths).forEach(e => {
-        pathPrepare(e);
-    });
-
-    var controller = new ScrollMagic.Controller();
-
-    var tween = new TimelineMax()
-        .add(TweenMax.to(whitePaths[0], 1, { strokeDashoffset: 0, ease: Linear.easeNone })) 
-        .add(TweenMax.to("#one", 1, { stroke: "#33629c", visibility:"visible", ease: Linear.easeNone }), 0); 
-
-    var scene = new ScrollMagic.Scene({ triggerElement: "#trigger1", duration: 200, tweenChanges: true })
-        .setTween(tween)
-        .addIndicators() 
-        .addTo(controller);
-
-    gsap.registerPlugin(ScrollTrigger)
-    let tl = gsap.timeline({
-            scrollTrigger:{
-                trigger:"#one",
-                start:"top 40% ",
-                end:"bottom 20%",
-                pinSpacing: false,
-                scrub:true,
-                toggleActions:"restart pause reverse none",
-                markers:true,
-            }
-        })
-
-    tl.to("#box4", {
-        duration: 0.1,
-        y:35,
-    })
-    tl.to("#box3", {
-        duration: 0.1,
-        y:35,
-    })
-
-    let t2 = gsap.timeline({
-            scrollTrigger:{
-                trigger:"#two",
-                start:"top 40% ",
-                end:"bottom 20%",
-                pinSpacing: false,
-                scrub:true,
-                toggleActions:"restart pause reverse none",
-                markers:true,
-            }
-        })
-
-    t2.to("#box3", {
-        duration: 0.1,
-        y:70,
-    })
-    t2.to("#box5", {
-        duration: 0.1,
-        y:35,
-    })
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+<script src="./script.js"></script>
 </html>
