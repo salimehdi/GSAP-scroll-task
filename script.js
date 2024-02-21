@@ -44,7 +44,7 @@ for (let i = 0; i < 7; i++) {
     .add(TweenMax.to(whitePaths[i], 0, { visibility: "visible" }));
   var scene = new ScrollMagic.Scene({
     triggerElement: partition[i],
-    duration: 200,
+    duration: 70,
     tweenChanges: true,
   })
     .setTween(tween)
@@ -61,7 +61,6 @@ function colorAnimation(sreen, colorD, colorB) {
       pinSpacing: false,
       scrub: true,
       toggleActions: "restart pause reverse none",
-      markers: true,
     },
   });
 
@@ -78,37 +77,31 @@ function colorAnimation(sreen, colorD, colorB) {
     backgroundColor: colorB,
   });
 }
-const screenBody = [
-  "#CBCBCD",
-  "#1C0362",
-  "#141748",
-  "#0D131B",
-  "#22CFEA",
-  "#BA2D09",
-  "#00B769",
-];
-const screenDiv = [
-  "#6311A8",
-  "#4D27CD",
-  "#0E123A",
-  "#16263B",
-  "#1264E7",
-  "#012C91",
-  "#00834C",
-];
+
+const mobBody = document.getElementsByClassName("swiper-slide")
+const mobDiv = document.getElementsByClassName("box")
+const screenBody = ["#CBCBCD","#1C0362","#141748","#0D131B","#22CFEA","#BA2D09","#00B769"];
+const screenDiv = ["#6311A8","#4D27CD","#0E123A","#16263B","#1264E7","#012C91","#00834C"];
+
+for (let i = 0; i < 7; i++) {
+  mobBody[i].style.backgroundColor=screenBody[i];
+  mobDiv[i].style.backgroundColor=screenDiv[i];
+}
+
 for (let i = 1; i < 7; i++) {
   colorAnimation(i, screenDiv[i], screenBody[i]);
 }
+
 function textAnimation(sreen, divA, aTo, divB, bTo) {
-  let tl = gsap.timeline({
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: partition[sreen - 1],
       start: "top 55% ",
       end: "bottom 45%",
       pinSpacing: false,
-      scrub: true,
+      scrub: 1,
       toggleActions: "restart pause reverse none",
-      markers: true,
+      fastScrollEnd: true,
     },
   });
 
@@ -123,9 +116,9 @@ function textAnimation(sreen, divA, aTo, divB, bTo) {
 }
 
 const cirTop = document.getElementsByClassName("cirTop");
-textAnimation(1, cirTop[0], 35, cirTop[1], 35);
+textAnimation(1, cirTop[0], 40, cirTop[1], 40);
 for (let i = 1; i < 7; i++) {
-  textAnimation(i, cirTop[i - 1], 70, cirTop[i], 35);
+  textAnimation(i, cirTop[i - 1], 75, cirTop[i], 40);
 }
 
 const cirMid = document.getElementsByClassName("cirMid");
@@ -162,8 +155,10 @@ for (let i = 1; i < 7; i++) {
   textAnimation(i, rightBottomTextFill[i - 1], 180, rightBottomTextFill[i], 90);
 }
 
+const t = [];
+
 function imageAnimation(sreen, divA, aTo, divB, bTo) {
-  let tl = gsap.timeline({
+  t[screen] = gsap.timeline({
     scrollTrigger: {
       trigger: partition[sreen - 1],
       start: "top 55% ",
@@ -171,15 +166,15 @@ function imageAnimation(sreen, divA, aTo, divB, bTo) {
       pinSpacing: false,
       scrub: 1,
       toggleActions: "restart pause reverse none",
-      markers: true,
+      fastScrollEnd: true
     },
   });
 
-  tl.to(divA, {
+  t[screen].to(divA, {
     duration: 1.5,
     y: aTo,
   });
-  tl.to(divB, {
+  t[screen].to(divB, {
     duration:1.5,
     y: bTo,
   });
@@ -205,3 +200,22 @@ imageAnimation(3, bottomImgOneFill[2], "0", bottomImgOneFill[3], "-100vh");
 imageAnimation(4, bottomImgOneFill[3], "0", bottomImgOneFill[4], "-100vh");
 imageAnimation(5, bottomImgOneFill[4], "0", bottomImgOneFill[5], "-100vh");
 imageAnimation(6, bottomImgOneFill[5], "0", bottomImgOneFill[6], "-100vh");
+imageAnimation(7, bottomImgOneFill[6], "0", bottomImgOneFill[0], "-100vh");
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  autoplay:{
+    delay:2000,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+      el: '.swiper-scrollbar',
+  },
+});

@@ -3,7 +3,11 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <body>
+    <div id="web" style="position: relative;">
     <div id="sq">
         <div id="cir">
             <?xml version="1.0" encoding="utf-8"?>
@@ -21,11 +25,11 @@
 
             <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.2,31.6C51,13,75.4,3.9,99.8,3.9"/>
             <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.2,3.9C125,3.9,149.8,13.3,168.7,32.4"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168.2,33.3c29.2,25.7,29.2,65.8,29.2,65.8"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M196.4,100.5c0,24.8-9.4,49.6-28.5,68.5"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M167.9,167.7c-17.5,17.5-41.7,28.4-68.6,28.3"/>
             <!-- Need to change its direction -->
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M197,99.1c-0.7-24-10.4-47.7-28.8-65.8"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M168,167.3c18.5-18.4,28-42.5,28.4-66.8"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M100.4,196.1c24.5-0.2,48.9-9.7,67.5-28.4"/>
-            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M32.7,169c18.8,18,43,26.9,67.1,26.7"/>
+            <path class="whitePath" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M99.8,195.7c-24.7,0-49.6-9.4-68.5-28.5"/>
             <!--  -->
             
                 <circle class="greyCir" fill="#C9C9C9" cx="31.8" cy="31.3" r="3.1"/>
@@ -100,7 +104,7 @@
             <div class="rightSmallTextFill stay">Lorem, ipsum dolor sit amet consectetur adipisicing elit.dolor sit amet</div>
             <div class="rightSmallTextFill">Tempora omnis voluptatem cumque ducimus aliquid reiciendis veritatis.</div>
             <div class="rightSmallTextFill">Vel dolorum sunt necessitatibus possimus, magnam voluptatum omnis</div>
-            <div class="rightSmallTextFill">Enim, vero modi temporibus ipsam quaerat sapiente ea laborum ad iure</div>
+            <div class="rightSmallTextFill">Enim, vero modi temporibus ipsam quaerat sapiente ea</div>
             <div class="rightSmallTextFill">Officiis maxime libero voluptates dicta. Debitis tenetur dolorem</div>
             <div class="rightSmallTextFill">earum quisquam fuga, repudiandae laboriosam nihil non, veritatis ab vel</div>
             <div class="rightSmallTextFill">Lorem, ipsum dolor sit amet consectetur adipisicing elit.dolor sit</div>
@@ -143,6 +147,7 @@
         </div>
         <div class="topImgTwoFill">
             <img id="veme2" src="./ScrollAnimation Task Assets/4 dominos/ux-strategy-for-mobile-app-devlopment.png">
+            <img id="breadTop" src="./ScrollAnimation Task Assets/4 dominos/dominos-bread.png">
         </div>
         <div class="topImgTwoFill">
             <img id="veme3" src="./ScrollAnimation Task Assets/5 social/social-networking-app-case-study.png">
@@ -160,31 +165,130 @@
         </div>
         <div class="bottomImgOneFill">
             <img id="nexgtv4" src="./ScrollAnimation Task Assets/4 dominos/domi-img1.png">
+            <img id="breadDown" src="./ScrollAnimation Task Assets/4 dominos/dominos-bread1.png">
+            <img id="masalaDown" src="./ScrollAnimation Task Assets/4 dominos/dominos-masala.png">
         </div>
         <div class="bottomImgOneFill">
             <img id="nexgtv4" src="./ScrollAnimation Task Assets/5 social/karavan_2.png">
+            <img id="mobScreen1" src="./ScrollAnimation Task Assets/5 social/karavan-social-networking-app-screen-2.png">
+            <img id="mobScreen2" src="./ScrollAnimation Task Assets/5 social/developers-for-social-media-app.png">
         </div>
         <div class="bottomImgOneFill">
             <img id="nexgtv5" src="./ScrollAnimation Task Assets/6 bed/erp-app-development-service.png">
         </div>
         <div class="bottomImgOneFill">
-
+            <img id="ea1" src="./ScrollAnimation Task Assets/7 east asia/melltoo-img1.png">
+            <img id="ea2" src="./ScrollAnimation Task Assets/7 east asia/melltoo-img2.png">
+        </div>
+        <div class="bottomImgOneFill">
+            
         </div>
     </div>
-    <div id="bottomImgTwo">
 
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+    <div class="partition"></div>
+
+
+    </div>  
+    <div id="mob">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="oneImgArr">
+                    <img src="./ScrollAnimation Task Assets/1 film/nexgtv-entertainment-mobile-app-development.png"/>
+                    <img src="./ScrollAnimation Task Assets/1 film/nexgtv-mobile-app-ui-design.png"/>
+                </div>
+                <div class="box">
+                    <img src="./ScrollAnimation Task Assets/1 film/world-communication-awards-for-best-digital-experience.png" alt="nasa">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span> <button class="btn btn-danger">Coming Soon</button></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="twoImgArr">
+                    <img src="./ScrollAnimation Task Assets/2 blockchain/veme-app-ui-design.png"/>
+                    <img src="./ScrollAnimation Task Assets/2 blockchain/veme-blockchain-app-developed.png"/>
+                </div>
+                <div class="box">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="twoImgArr">
+                    <img src="./ScrollAnimation Task Assets/3 nasa/measure-total-body-weight-through-fitness-app.png"/>
+                    <img src="./ScrollAnimation Task Assets/3 nasa/nasa-fitness-tracking-mobile-app.png"/>
+                </div>
+                <div class="box">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span> <button class="btn btn-danger">Coming Soon</button></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="fourImgArr">
+                    <img id="mob1" src="./ScrollAnimation Task Assets/4 dominos/domi-img1.png"/>
+                    <img id="bread1" src="./ScrollAnimation Task Assets/4 dominos/dominos-bread.png"/>
+                    <img id="bread2" src="./ScrollAnimation Task Assets/4 dominos/dominos-bread1.png"/>
+                    <img id="masala" src="./ScrollAnimation Task Assets/4 dominos/dominos-masala.png"/>
+                    <img id="pizza_box" src="./ScrollAnimation Task Assets/4 dominos/pizza_box.png"/>
+                    <img id="mob2" src="./ScrollAnimation Task Assets/4 dominos/ux-strategy-for-mobile-app-devlopment.png"/>
+                </div>
+                <div class="box">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="fiveImgArr">
+                    <img id="sMob1" src="./ScrollAnimation Task Assets/5 social/developers-for-social-media-app.png"/>
+                    <img id="sMob2" src="./ScrollAnimation Task Assets/5 social/karavan-social-networking-app-screen-2.png"/>
+                    <img id="sMob3" src="./ScrollAnimation Task Assets/5 social/karavan-social-networking-app-screen.png"/>
+                    <img id="sMob4" src="./ScrollAnimation Task Assets/5 social/karavan_2.png"/>
+                    <img id="sMob5" src="./ScrollAnimation Task Assets/5 social/social-networking-app-case-study.png"/>
+                </div>
+                <div class="box">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="sixImgArr">
+                    <img id="sixMobBox1" src="./ScrollAnimation Task Assets/6 bed/erp-app-development-service.png"/>
+                    <img id="sixMobBox2" src="./ScrollAnimation Task Assets/6 bed/interior.jpg"/>
+                </div>
+                <div class="box">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div id="sevenImgArr">
+                    <img src="./ScrollAnimation Task Assets/7 east asia/melltoo-img1.png"/>
+                    <img src="./ScrollAnimation Task Assets/7 east asia/melltoo-img2.png"/>
+                </div>
+                <div class="box">
+                    <img src="./ScrollAnimation Task Assets/7 east asia/mobile-app-of-the-year-by-entrepreneur.png" alt="nasa">
+                    <div class="title">ABC 123</div>
+                    <div class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, voluptates?</div>
+                    <div class="vcs"><span>View Case Study</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
     </div>
-    <div id="bottomImgThree">
-
-    </div>
-
-    <div class="partition"></div>
-    <div class="partition"></div>
-    <div class="partition"></div>
-    <div class="partition"></div>
-    <div class="partition"></div>
-    <div class="partition"></div>
-    <div class="partition"></div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
