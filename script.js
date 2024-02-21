@@ -48,7 +48,12 @@ for (let i = 0; i < 7; i++) {
     tweenChanges: true,
   })
     .setTween(tween)
-    .addIndicators()
+    .addIndicators({
+      colorTrigger: "#0000",
+      colorStart: "#0000",
+      colorEnd: "#0000",
+      indent: "100vw", 
+    })
     .addTo(controller);
 }
 
